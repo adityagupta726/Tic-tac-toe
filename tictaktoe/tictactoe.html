@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            width:550px;
+            margin:auto;
+        }
+
+     .square{
+         height:80px;
+         width:80px;
+         font-size:45px;
+         text-align:center;
+         font-family: 'comfortaa',cursive;
+     }   
+    </style>
+</head>
+<body onload="start();">
+    <h1>Tic Tac Toe</h1>
+    <div id="message">message here</div>
+    <table border="1">
+    <tr>
+     <td class="square" id="s1" onclick="nextMove(this)"></td>
+     <td class="square" id="s2" onclick="nextMove(this)"></td>
+     <td class="square" id="s3" onclick="nextMove(this)"></td>   
+    </tr> 
+    <tr>
+            <td class="square" id="s4"onclick="nextMove(this)"></td>
+            <td class="square"id="s5"onclick="nextMove(this)"></td>
+            <td class="square"id="s6"onclick="nextMove(this)"></td>   
+           </tr> 
+           <tr>
+                <td class="square"id="s7"onclick="nextMove(this)"></td>
+                <td class="square"id="s8"onclick="nextMove(this)"></td>
+                <td class="square"id="s9"onclick="nextMove(this)"></td>   
+               </tr>       
+    </table>
+    <a href="javascript:start();" >start Over</a>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
